@@ -1,0 +1,711 @@
+#incluir <stdio.h>
+#incluir <math.h>
+#incluir <string.h>
+
+//questao 1
+/*
+int principal (){
+    int a[2],i;
+ para (i=0; i<2; i++){
+        printf("forneca o numero %d",i);
+        scanf("%d",&a[i]);
+    }
+ se ( a[0] > a[1])
+    {
+ printf("O numero%d e o maior "a[0]);
+    } 
+ mais se (a[1] > a[0])
+    {
+ printf("Numero%d e o maior", a[1]);
+    }
+    
+}*/
+/*
+questao 2
+/*
+int principal (){
+    int numero[2],i;
+ para ( i = 0; i < 2; i++)
+    {
+ printf(" informar o numero %d :",i+1);
+ scanf ("%d",&numero[i]); 
+    }
+ se (numero[0]>numero [1])
+    {
+ printf("Numero%d e o maior",numero[0]);
+ }mais se (numero[0]== numero[1])
+    {
+      printf("Numeros iguais"); 
+    }else
+    {
+ printf("Numero%d e o maior",numero[1]);
+    }
+    
+}*/
+
+// questao 3
+/*
+int principal (){
+    int numero,par;
+    printf("Qual o numero ?");
+    scanf("%d",&numero);
+    par = numero % 2;
+ se (par == 0)
+    {
+ printf ("Esse numero e par");
+    }else{
+ printf ("Esse numero e impar");
+    }
+    
+}*/
+
+//questao 4
+/*
+int main (){
+    int prestacao ;
+    float salario ;
+    printf(" forenaca o salario do funcionario :");
+    scanf("%f",&salario);
+    printf(" forenaça a prestacao do funcionario :");
+    scanf("%d",&prestacao);
+    if (prestacao > salario *0.2)
+    {
+        printf("Emprestimo nao concedido.");
+    }else{
+        printf("Emprestimo concedido.");
+    }
+    
+}*/
+
+//questao 5
+/*
+int main(){
+    int numero ,quadrado;
+    float raiz;
+    printf(" de o numero desejado :");
+    scanf("%d",&numero);
+    if (numero > 0)
+    {
+       quadrado = pow(numero,2);
+       raiz = sqrt(numero);
+       printf("O %d elevado ao quadrado e %d\nja a raiz desse mesmo numero e %.2f",numero,quadrado,raiz);
+    }else if(numero == 0)
+    {
+        printf("Esse numero nao e nem positivo nem negativo");
+    }else
+    {
+        printf("Esse numero e negativo e nao sera calculado");
+    }
+    
+}*/
+
+//questao 6 //(ASPAS SIMPLE != ASPAS DUPLAS)
+/*
+int main (){
+    float altura=0.0,homem,mulher; 
+    char sexo;
+    printf("Qual e seu sexo (M)asculino (F)eminino :");
+    scanf("%s",&sexo);
+    printf("Qual a sua altura :");
+    scanf("%f",&altura);
+    if (sexo =='M'||sexo =='m'||sexo =="masculino"||sexo == "Masculino"){
+       homem=(72.7*altura) - 58;
+       printf("Sua altura ideal e %.2f",homem); 
+    }
+    else if(sexo == 'f'||sexo =='F'||sexo =="feminino"||sexo == "Feminino"){
+        mulher = (62.1 * altura) - 44.7;
+        printf("Sua altura ideal e %.2f",mulher);
+    }else{
+        printf("Voce nao informou seu sexo logo nao foi possivel calcular sua altura ideal");
+    }
+    
+}*/
+
+//questao 7
+/*
+int main(){
+    int a[4],i;
+    int soma1 ,soma2,par;
+    for (i = 0; i < 4; i++)
+    {
+        printf("Me o valor %d :",i+1);
+        scanf("%d",&a[i]);
+    }
+    
+    soma1 = a[2] + a[3];
+    soma2 = a[0]+a[1];
+    par = a[0] % 2;
+    if (a[1]>a[2] && a[3]>a[0] && soma1>soma2 && a[2]>0 && a[3]>0 &&par ==0)
+    {
+       printf("Valores aceitos");
+    }else{
+        printf("Valores nao aceitos");
+    }
+    
+}*/
+
+//questao 8 - concluir 
+/*
+int main (){
+    float mg,sp,rj,ms,venda;
+    char estado[2];
+    printf("Qual o valor da venda :");
+    scanf("%f",&venda);
+    printf("Qual o destino da venda :");
+    scanf("%s",&estado);
+    
+    
+    if (strcmp(estado,"MG")==0 || strcmp(estado,"mg")==0  ) //fun��o de comparar strings
+    {
+        mg= venda + (venda * 0.07);
+        printf("O valor da venda para Minas Gerais e %.2f",mg);
+    }
+        else if(estado=="SP"|| estado =="sp")
+        {
+        sp= venda + (venda * 0.12);
+        printf("O valor da venda para Sao Paulo e %.2f",sp);
+        }
+            else if(estado=="RJ"|| estado =="rj")
+            {
+                rj= venda + (venda * 0.15);
+                printf("O valor da venda para Rio de Janeiro e %.2f",rj);
+            }
+                else if (estado=="MS"|| estado =="ms")
+                {
+                    ms= venda + (venda * 0.08);
+                    printf("O valor da venda para Mato Grosso do Sul e %.2f",ms);
+                    }
+                    else
+                    {
+                        printf("Erro, o estado digitado nao esta no nosso banco de dados");
+                    }
+            
+}
+*/
+
+// questao 9
+/*
+int main(){
+    int idade;
+    printf("Qual sua idade ");
+    scanf("%d",&idade);
+    if (idade >= 5 && idade <= 7)
+    {
+        printf("Sua categoria e infantil A");
+    }
+    else if(idade >= 8 && idade <= 10)
+    {
+       printf("Sua categoria e infantil B") ;
+    } else if(idade >= 11 && idade <= 13)
+    {
+        printf("Sua categoria e juvenil A");
+    } else if(idade >= 14 && idade <= 17)
+    {
+        printf("Sua categoria e juvenil B");
+    }else if (idade >18) {
+        printf("Sua categoria e Senior");
+    }
+    
+}*/
+
+//questao 10
+/*
+int main(){
+    float altura,peso;
+    printf("Qual sua altura ");
+    scanf("%f",&altura);
+    printf("Qual sua peso ");
+    scanf("%f",&peso);
+    if(altura <= 1.20 && peso < 60)
+    {
+        printf("Sua classificaçao e A");
+    }
+    else if(altura <= 1.20 && peso >60 && peso <90)
+    {
+        printf("Sua classificaçao e B");
+    }
+    else if (altura <= 1.20 && peso >90)
+    {
+     printf("Sua classificaçao e G");  
+    }
+    else if (altura >= 1.20 && altura <=1.70 && peso < 60)
+    {
+        printf("Sua classificaçao e B");
+    }
+    else if(altura >= 1.20&&altura <=1.70 && peso >60 && peso <90)
+    {
+         printf("Sua classificaçao e E");
+    }
+    else if(altura >= 1.20 && altura <=1.70 && peso>90)
+    {
+         printf("Sua classificaçao e H");
+    }
+    else if (altura >=1.70 && peso <60)
+    {
+        printf("Sua classificaçao e C");
+    }
+    else if(altura >=1.70 && peso >60 && peso <90)
+    {
+        printf("Sua classificaçao e F");
+    } else if (altura >= 1.70 && peso >90)
+    {
+        printf("Sua classificaçao e I");
+    }
+    
+}*/
+
+//questao 11
+/*
+int main(){
+    int n[3];
+    float calculo;
+    printf(" forneça os 3 numeros  que o ultimo so pode ser 1 ,2 ,3 :");
+    scanf("%d%d%d",&n[0],&n[1],&n[2]);
+    if(n[2] ==1){
+        calculo =n[0]*n[1]*n[2];
+        printf("De acordo com a media geometrica o resultado e : %.2f",calculo);
+    }
+    else if (n[2] ==2)
+    {
+        calculo =((n[0]+2)*(n[1]+3)*n[2])/6;
+        printf("De acordo com a media ponderada o resultado e : %.2f",calculo);
+    }
+    else if (n[2] ==3)
+    {
+        calculo = 1/((1/n[0])+(1/n[1])+(1/n[2]));
+        printf("De acordo com a media harmonica o resultado e : %.2f",calculo);
+    } else if (n[2] ==3)
+    {
+        calculo = (n[0]+n[1]+n[2])/3;
+        printf("De acordo com a media aritimetica o resultado e : %.2f",calculo);
+    }else {
+        printf("Lembrece o segundo numero so pode se 1 , 2 , 3");
+    } 
+}*/
+
+//  questao 12
+/*
+int main (){
+    int y,x;
+    printf("Me forneca a posicao x");
+    scanf("%d",&x);
+    printf("Me forneca a posicao y");
+    scanf("%d",&y);
+    if (x>0 && y>0)
+    {
+        printf("O ponto se encontra no 1 quadrante\n");
+    }else if(x<0 && y>0)
+    {
+        printf("O ponto se encontra no 2 quadrante\n");
+    }
+    else if (x<0 && y<0)
+    {
+        printf("O ponto esta no 3 quadrante\n ");
+    }else if(x>0 && y<0)
+    {
+        printf("O ponto se encontra no 4 quadrante\n");
+    }else if (x == 0 && y ==0)
+    {
+        printf("Origem\n");
+    }else if (x == 0)
+    {
+        printf("Eixo x\n");
+    }else if (y==0)
+    {
+        printf("Eixo y\n");
+    }
+    
+}*/
+
+//questao 13
+/*
+int main (){
+    int x;
+    printf("Me forneca a posicao o mes :");
+    scanf("%d",&x);
+    
+    if (x == 1)
+    {
+    printf("Esse mes e janeiro");
+    }else if(x ==2)
+    {
+    printf("Esse mes e fevereiro fevereiro");   
+    }
+    else if ( x == 3)
+    {
+     printf("Esse mes e marco");   
+    }else if( x==4)
+    {
+    printf("Esse mes e abril");
+    }else if ( x==5)
+    {
+     printf("Esse mes e maio ");   
+    }else if (x==6)
+    {
+    printf("Esse mes e junho");    
+    }else if (x==7)
+    {
+     printf("Esse mes e julho");   
+    } else if (x == 8)
+    {
+    printf("Esse mes e agosto");
+    }else if(x ==9)
+    {
+    printf("Esse mes e setembro ");
+    }
+    else if ( x == 10)
+    {
+    printf("Esse mes e outubro");    
+    }else if( x==11)
+    {
+    printf("Esse mes e novembro");
+    }else if ( x==12)
+    {
+     printf("Esse mes dezembro ");   
+    }else if (x>12 || x<=0)
+    {
+     printf("Esse mes nao existe ");   
+    }
+}*/
+
+//questao 14
+
+
+int main (){
+    int x;
+
+    printf("Me forneca a posicao o mes :");
+    scanf("%d",&x);
+ switch (x)
+ {
+ case 1:
+    printf("Janeiro");
+    break;
+
+ case 2:
+    printf("fevereiro ");
+    break;
+
+case 3:
+    printf("marco");
+    break;
+
+case 4:
+    printf("abriu");
+    break;
+
+case 5:
+    printf("maio");
+    break;
+
+case 6:
+    printf("junho");
+    break;
+    
+case 7:
+    printf("julho");
+    break;
+    
+case 8:
+    printf("agosto");
+    break;
+    
+case 9:
+    printf("setembro");
+    break;
+    
+case 10:
+    printf("outubro");
+    break;
+    
+case 11:
+    printf("novembro");
+    break;
+
+case 12:
+    printf("dezembro");
+    break;
+
+
+ default:
+ printf("Mes nao selecionado ou inexistente");
+    break;
+ }   
+}
+
+//questao 15
+/*
+int main (){
+    int i ;
+    printf("Me fornaca o dia da semana :");
+    scanf("%d",&i);
+    switch (i)
+    {
+    case 1:
+       printf ("Hj e domingo");
+        break;
+        case 2:
+       printf ("Hj e segunda");
+        break;
+        case 3:
+       printf ("Hj e terca");
+        break;
+        case 4:
+       printf ("Hj e quarta");
+        break;
+        case 5:
+       printf ("Hj e quinta");
+        break;
+        case 6:
+       printf ("Hj e sexta");
+        break;
+        case 7:
+       printf ("Hj e sabado");
+        break;
+    
+    default:
+    printf("Esse dia nao existe");
+        break;
+    }
+}*/
+
+//questao 16
+/*
+int main(){
+int ddd;
+    printf("Me forneca o DDD :");
+    scanf("%d",&ddd);
+switch (ddd)
+    {
+    case 61:
+       printf ("Brasilia");
+        break;
+        case 71:
+       printf ("Salvador");
+        break;
+        case 11:
+       printf ("São Paulo");
+        break;
+        case 21:
+       printf ("Rio de Janeiro");
+        break;
+        case 32:
+       printf ("Juiz de Fora");
+        break;
+        case 16:
+       printf ("Campinas");
+        break;
+        case 27:
+       printf ("Vitoria");
+        break;
+        case 31:
+        printf("Belo Horizonte");
+        break;
+    
+    default:
+    printf("Nao existe esse DDD");
+        break;
+    }
+}*/
+
+//questao 17
+/*
+int main (){
+    int i;
+    float numero[2],calculo;
+    printf("Escolha uma das opcoes a baixo :\n");
+    printf("(1)a+b = x\n(2)a-b = x\n(3)a*b = x\n(4)a/b = x\n");
+    scanf("%d",&i);
+   
+    if(i>=5 || i <= 0 ){
+        printf("Opcao nao selecionada ");
+    }else{
+    printf("Agora por gentileza me forneca os numeros\n");
+    printf("Numeros 1:");
+    scanf("%f",&numero[0]);
+    printf("Numeros 2:");
+    scanf("%f",&numero[1]);
+        switch (i)
+        {
+        case 1:
+            calculo = numero[0]+numero[1]; 
+            printf("O calculo escolhido foi a+b = x\nE o resultado e %.2f",calculo);
+            
+            break;
+            
+            case 2:
+            calculo = numero[0]-numero[1] ;
+        printf("O calculo escolhido foi a-b = x\nE o resultado e %.2f",calculo);
+            break;
+            
+            case 3:
+            calculo = numero[0]*numero[1]; 
+        printf("O calculo escolhido foi a*b = x\nE o resultado e %.2f",calculo);
+            break;
+            
+            case 4:
+            calculo = numero[0]/numero[1] ;
+        printf("O calculo escolhido foi a/b = x\nE o resultado e %.2f",calculo);
+            break;
+            default:
+            break;
+        }
+    }
+}
+*/
+
+/questao 18 
+/*
+int main (){
+     int i ,por3,por5;
+    printf("Me fornela o numero :");
+    scanf("%d",&i);
+  por3= i % 3;
+  por5= i % 5;
+  
+    if (por3==0 && por5==0)
+    {
+        printf("Esse numero NAO pode pois e divisivel por 3 e por 5");
+    }
+    else if(por3==0)
+    {
+        printf("Numero divisivel por 3");
+    }else if(por5==0)
+    {
+        printf("Numero divisivel por 5");
+    }  else if(por3>0 && por5 > 0)
+    {
+        printf("Numero nao divisivel nem por 3 e nem por 5");
+    }
+    
+}*/
+
+//questao 19 
+
+int main(){
+double valor,D,E;
+int nota,b,d,f,h,j,B,m,o,q,s;
+int cem,cinquenta,vinte,dez,cinco,dois;
+int m_um,m_cinquenta,m_vintecinco,m_dez,m_cinco,m_umcent;
+scanf ("%lf",&valor);
+nota=valor;
+cem=nota/100;
+b=nota%100;
+cinquenta=b/50;
+d=b%50;
+vinte=d/20;
+f=d%20;
+dez=f/10;
+h=f%10;
+cinco=h/5;
+j=h%5;
+dois=j/2;
+m_um=j%2;
+E=valor*100;
+B=(int) E;
+m=B%100;
+m_cinquenta=m/50;
+o=m%50;
+m_vintecinco=o/25;
+q=o%25;
+m_dez=q/10;
+s=q%10;
+m_cinco=s/5;
+m_umcent=s%5;
+printf ("NOTAS:\n");
+printf ("%d nota(s) de R$ 100.00\n",cem);
+printf ("%d nota(s) de R$ 50.00\n",cinquenta);
+printf ("%d nota(s) de R$ 20.00\n",vinte);
+printf ("%d nota(s) de R$ 10.00\n",dez);
+printf ("%d nota(s) de R$ 5.00\n",cinco);
+printf ("%d nota(s) de R$ 2.00\n",dois);
+printf ("MOEDAS:\n");
+printf ("%d moeda(s) de R$ 1.00\n",m_um);
+printf ("%d moeda(s) de R$ 0.50\n",m_cinquenta);
+printf ("%d moeda(s) de R$ 0.25\n",m_vintecinco);
+printf ("%d moeda(s) de R$ 0.10\n",m_dez);
+printf ("%d moeda(s) de R$ 0.05\n",m_cinco);
+printf ("%d moeda(s) de R$ 0.01\n",m_umcent);
+return 0;
+}
+*/
+
+//questao 20
+/*
+int main (){
+    int i ;
+    float n[4],media,recu,mediarecu;
+    float peso[4]={2.0,3.0,4.0,1.0};
+    for ( i = 0; i < 4; i++)
+    {
+       printf("Qual as nota %d do aluno ",i+1);
+       scanf("%f",&n[i]);
+       if (n[i]>10)
+       {
+        n[i] =10;
+       }
+       
+    }
+    media = ((n[0]*peso[0])+(n[1]*peso[1])+(n[2]*peso[2])+(n[3]*peso[3]))/10.0;
+    if (media >=7.0)
+    {
+        printf("Media: %.1f\n",media);
+        printf("Aluno aprovado\n");
+    }
+    else if (media <= 5.0)
+    {
+        printf("Media: %.1f\n",media);
+        printf("Aluno reprovado\n");
+    }
+    else if(media > 5.0 && media <=6.9)
+    {
+        printf("Aluno em exame.\n");
+        printf("Qual a nota do aluno em exame :");
+        scanf("%f",&recu);
+        printf("Nota do exame:%.1f\n",recu);
+        printf("Em exame com media%f",media);
+        mediarecu = (recu + media) /2.0;
+            if (mediarecu >=5.0)
+        {
+            printf("Aluno aprovado\n");
+            printf("Media final:%.1f",mediarecu);
+        }else if (media < 5.0){
+            printf("Aluno reprovado");
+            printf("Media final:%.1f",mediarecu);
+        }
+    }
+}*/
+
+//questao 21
+/*
+int main (){
+    float a,b,c,delta,raiz,raiz2;
+    printf("Me forneca o \"A\":");
+    scanf("%f",&a);
+ printf ("Me forneca o \"B\":");
+    scanf("%f",&b);
+ printf ("Me forneca o \"C\":");
+    scanf("%f",&c);
+ se (a== 0)
+        {
+            printf("Nao e equaçao de segundo grau");
+        }else {
+            
+            delta = pow(b,2) - 4 * a * c;
+ se (delta <0 )
+        {
+ printf ("Nao existe raiz");
+ }mais se (delta == 0)
+        {
+            raiz= (-1*b) /(2*a);
+           printf("raiz unica e com valor de %.2f",raiz) ;
+ }mais se (delta >0)
+        {
+            raiz =((-1*b) + sqrt(delta)) /(2*a);
+            raiz2 =((-1*b) - sqrt(delta)) /(2*a);
+            printf("As raizes sao %.1f e %.1f",raiz,raiz2);
+        }
+        
+    
+    }
+}*/
