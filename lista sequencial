@@ -1,0 +1,152 @@
+#incluir <stdio.h>
+#incluir <stdlib.h>
+#incluir<math.h>
+
+#definir PI 3.14159;
+
+// questao 1 
+/*int principal(){
+printf ("Hello World!");
+}
+*/
+
+// questao 2
+/*int principal(){
+printf("Caderno de poesias e um belo lugar.\nTantas coisas lindas que eu gostaria de falar.\n");
+printf("Eu falo em forma de versos para todos poderem escutar.\nAgora voces ja sabe como os poetas passam os dias escrevendo em seu\n");
+printf("cadernos de poesias");
+}*/
+
+
+// questao 3
+/*
+int principal(){
+    int a=0;
+ flutuar b=0;
+ duplo c=0;
+    char d[1], e[50];
+  
+    printf(" me passe o num inteiro : ");
+    scanf("%i",&a);
+    printf(" me passe o num real : ");
+    scanf("%f",&b);
+    printf(" me passe o num real maior : ");
+ scanf ("%lf",&c);
+ printf(" me favorecer a letra : ");
+    scanf("%s",&d);
+ printf(" me favorecer uma string : ");
+    scanf("%s",&e);
+    
+ printf("O numero inteiro e :%d\nO numero real e :%f\nO numero real maior e :%lf\nA letra e :%s\nA string e :%s,"a,b,c,d,e);
+}   */
+
+// questao 4
+/*
+int principal(){
+    int a,b,x;
+    printf(" o valor de A:");
+    scanf("%d",&a);
+    printf(" o valor de :");
+    scanf("%d",&b);
+    x=a+b;
+ printf ("%d + %d = %d",a,b,x);
+}    */
+
+// questao 5
+/*
+int principal(){
+    int a,b,x;
+    printf("o valor de A:");
+    scanf("%d",&a);
+    printf(" o valor de :");
+    scanf("%d",&b);
+    printf("%d + %d = %d",a,b,x=a+b);
+}  */
+
+// questao 6
+/*
+int main(){
+    int a=5,=3,x;
+    printf(" o valor de A:");
+    scanf("%d",&a);
+    printf(" o valor de :");
+    scanf("%d",&b);
+    printf("%d + %d = %d",a,b,x=a+b);
+}  */
+
+
+// questao 7
+/*
+int main(){
+int a,b,PROD;
+    printf(" o valor de A:");
+    scanf("%d",&a);
+    printf(" o valor de :");
+    scanf("%d",&b);
+    PROD=a*b;
+    printf("PROD = %d",PROD);
+}
+*/
+
+// questao 8
+/*
+int main(){
+    int a[4],i,diferenca; 
+    for(i=0;i<4;i++){
+        printf("Me passe o valor %d:",i+1);
+        scanf("%d",&a[i]);
+    }
+    diferenca = abs( a[0]*a[1]-a[2]*a[3]);
+    printf("%d x %d - %d x %d =%d",a[0],a[1],a[2],a[3],diferenca);
+}*/
+
+//questao 9
+/*
+int main(){
+    int i ;
+    char vendedor[50];
+    float vendas[31],salario,porcento[31];
+    printf("Qual o nome do funcionario: ");
+    scanf("%s",&vendedor);
+    for (i=0;i<31;i++){
+        printf("Quanto ele vendeu no dia %d:",i+1);
+        scanf("%f",&vendas[i]);
+    }
+    for ( i = 0; i < 31; i++)
+    {
+        porcento[i]=vendas[i]*0.15;
+    }
+    
+    for ( i = 0; i < 31; i++)
+    {
+        salario += porcento[i];
+    }
+    printf("O salario e %.2f",salario);
+}*/
+
+// questao 10
+/*
+int principal(){
+int y[2] ,x[2],i;
+flutuar resultado;
+para ( i = 0; i < 2; i++)
+{
+ printf (" forneca o x%d :",i+1);
+    scanf("%d",&x[i]);
+ printf(" forneca o y%d :,"i+1);
+    scanf("%d",&y[i]);
+}
+resultado = sqrt(pow(x[1]-x[0],2)+pow(y[1]-y[0],2));
+printf ("A distancia e %.2f",resultado);
+}*/
+
+// questao 11
+/*
+int principal(){
+int raio;
+dupla área, volume;
+printf(" forneça o raio ");
+scanf ("%d",raio);
+área = (duplo)4*pow(raio,2)* PI; 
+volume =(4,0/3)*pow(raio,3)*PI;
+}*/
